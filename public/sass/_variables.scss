@@ -1,0 +1,41 @@
+
+//ANCHORS
+
+$maincontainerWidth:70vw;
+
+//COLORS
+$PrimaryColor: #203146;
+$NeuralColor: #fff;
+$SecondaryColor:#EE284C; 
+$TertiaryColor:#182535;
+$InactiveColor: rgba(155, 155, 155, 0.7) ;
+$DarkFontsColor:#4D4F5C; 
+$tableBackground:#E7E7E7;
+$PlaceHolderColor:#8B98AF;
+$grayBackground:#EEF1F3;
+
+//FONTS
+
+$fontfammilyBold:'bold';
+$fontfamilyLight:'light';
+$fontfamilyRegular:'regular';
+
+
+//FONTS-SIZE
+
+:root{
+    --linksSize:.85em;
+    --titleSize:3em;
+    --paragraphSize:.85em;
+    --placeHolderSize:.7em;
+    --subtitleSize:1.7em;
+    --smallSubtitleSize:1.2em;
+    --iconsSize:1.4em;
+    --big-icons-size:1.6em;
+    --blocksTitleSize:1.5em;
+    --buttons-size:1.1em;
+
+    --panelWidth:300px;
+
+    --main-containers-width:90%;
+}

@@ -1,0 +1,43 @@
+
+@media (max-width: 1440px){
+
+    :root{
+        --linksSize:.8em;
+        --titleSize:3em;
+        --paragraphSize:.85em;
+        --placeHolderSize:.7em;
+        --subtitleSize:1.5em;
+        --smallSubtitleSize:1.15em;
+        --iconsSize:1em;
+        --blocksTitleSize:1.5em;
+
+        --panelWidth:240px;
+        --big-icons-size:1.5em;
+    
+        --main-containers-width:90%;
+    }
+
+    .search-container{
+        width: 50%;
+    }
+
+    .nav-container{
+        width: 50%;
+    }
+
+    .upload-panel-title{
+        img{
+            width: 1.2em;
+        }
+    }
+
+    .styled-table td{
+        white-space: pre-line;
+    }
+
+    .pagination-elements-container{
+        width: 95%;
+    }
+
+
+}

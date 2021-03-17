@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input{
+    cursor: pointer;
+}
+
+p, a{
+    font-family: $fontfamilyLight;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $fontfammilyBold;
+}
+
+.separator{
+    display: block;
+    height:30px;
+    width: 1px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    margin: auto 1.5em auto 1.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icons{
+    width: 1.3em;
+}
+
+.grid-block-selected{
+    background-color: $PrimaryColor !important;
+    border-radius: 0 !important;
+    border: none !important;
+    
+    h3{
+        color: #fff !important;
+    }
+}
+
+.titles{
+    font-size: var(--titleSize);
+}
+
+.paragraphs{
+    font-size: var(--paragraphSize);
+}
+
+.links{
+    font-size: var(--linksSize);
+}
+
+.subtitles{
+    font-size: var(--subtitleSize);
+    color: $PrimaryColor;
+    margin: 1em 0 1em 0;
+}
+
+.center-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5em auto 5em auto !important;
+}
+
+.black{
+    color: #000 !important;
+}
+
+.margin-sections{
+    margin: 2em 0 2em 0;
+}
+
+.smallSubtitles{
+    font-size: var(--smallSubtitleSize);
+}
+
+.flex{
+    @include spaceFlex;
+}
+
+.center-flex{
+    @include Simpleflex;
+}
+
+
+.diez{
+    width:10% !important;
+}
+
+.veinte{
+    width: 20% !important;
+}
+
+.treinta{
+    width: 30% !important;
+}
+
+.cuarenta{
+    width: 40% !important;
+}
+
+.cincuenta{
+    width: 50% !important;
+}
+
+.sesenta{
+    width: 60% !important;
+}
+
+.setenta{
+    width: 70% !important;
+}
+
+.ochenta{
+    width: 80% !important;
+}
+
+.noventa{
+    width: 90% !important;
+}
+
+.cien{
+    width: 100% !important;
+}
+
+.border-left{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.border-right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.neutral{
+    background-color: $tableBackground !important;
+}
+
+.vertical-separator{
+    display: block;
+    height: 30px;
+    width: 2px;
+    background-color: $PrimaryColor;
+}
+
+.scroll-elements{
+    max-height: 600px;
+    overflow: scroll;
+}
+
+.full-horizontal-separator{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $InactiveColor;
+    margin: .5em 0 .5em 0;
+}
+
+.main-container-width{
+    width: var(--main-containers-width);
+    margin: auto
+}
+
+.flex-container{
+    @include flexRowCenter;
+    align-items: flex-start !important;
+    width: 100%;
+}
+
+.margin-right{
+    margin-right: 2em;
+}
+
+.start{
+    align-self: flex-start !important;
+    justify-self: flex-start !important;
+}
+
+.big-icons{
+    width: var(--big-icons-size);
+}
+
+.big-margin-top{
+    margin-top: 30em;
+}
+
+.margin-top{
+    margin-top: 5em;
+}
+
+.search-title{
+    @include flexRowCenter;
+    width: 100%;
+    height: 3em;
+
+    div{
+        width: 100%;
+        margin: 1em;
+    }
+}
+
+.title-box{
+    @include flexRowCenter;
+    height: 100%;
+    margin: 0 !important;
+
+    h3{
+        width: 100%;
+        color: $PrimaryColor;
+    }
+}
+
+.title-box-container{
+    height: 100%;
+}
+
+.add-edit-container{
+    @include flexRowCenter;
+    background-color: $grayBackground;
+    height: 100%;
+    width: auto !important;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 0 !important;
+
+    a{
+        margin: 0 1.5em 0 1.5em;
+    }
+}
+
+.title-search-box{
+    @include flexRowCenter;
+    justify-content: flex-start ;
+
+    height: 100%;
+    background-color:$grayBackground;
+    border-radius: 10px;
+
+    input{
+        border: none;
+        margin-left: 1em;
+        background:none;
+        outline: none;
+
+        &::placeholder{
+            color: $PrimaryColor;
+        }
+    }
+
+    label{
+        img{
+            width: var(--iconsSize);
+        }
+
+        margin-left: 2em;
+    }
+}
+
+
+
+.line-separator{
+    width: 100%;
+    background-color: $grayBackground;
+    display: block;
+    height: 4px;
+}
+
+.red{
+    color: red !important;
+}
+
+.margin-bottom{
+    margin-bottom: 1em;
+}
+
+.paginator-selected{
+    background-color: $SecondaryColor;
+    color: #fff !important;
+}
+
+.pagination-container{
+
+    @include flexRowCenter;
+
+    img{
+        width: 3em;
+    }
+
+    div{
+        @include flexRowCenter;
+
+        span{
+            padding: 1em;
+            color: $DarkFontsColor;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 0 .5em 0 .5em;
+        }
+    }
+}
+
+.add-simbol{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+}
+
+.big-margin-bottom{
+    margin-bottom: 3em;
+}
+
+.single-title{
+    width: 100%;
+
+    h2{
+        margin-bottom: 1em;
+    }
+}
+
+.primaryColor-background{
+    background-color: $PrimaryColor !important;
+}
+
+.secondaryColor-background{
+    background-color: $SecondaryColor;
+}
+
+.padding-top-bottom{
+    padding: 1em 0 1em 0;
+}
+
+.xls{
+    &::after{
+        content: 'xls';
+        border: 1px solid #fff;
+        border-radius: 7px;
+        padding: .2em .4em .2em .4em;
+        margin-left: .5em;
+        text-decoration: none !important;
+    }
+}
+
+.bold{
+    font-family: $fontfammilyBold !important;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.table-title-option{
+    width: auto;
+
+    div{
+        @include flexRowCenter;
+        margin-bottom: 1em;
+
+        a{
+            margin: 0 1em 0 1em;
+            color: $PrimaryColor;
+            font-size: var(--paragraphSize);
+
+            @include flexRowCenter;
+
+            
+                &::before{
+                    content: "";
+                    width: .35em;
+                    height: .35em;
+                    display: block;
+                    border-radius: 100%;
+                    border: 2px solid $PrimaryColor;
+                    margin-right: .5em;
+                }
+        }
+
+    }
+}
+
+.table-title-option-selected{
+    &::before{
+        content: "";
+        width: 1em !important;
+        height: 1em !important;
+        display: block;
+        border-radius: 100%;
+        background-color: red;
+        border: none !important;
+        margin-right: .5em;
+    }
+}

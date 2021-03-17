@@ -1,0 +1,100 @@
+
+.panel-container{
+    background-color: $PrimaryColor;
+    margin: auto;
+    left: 0;
+    min-width: var(--panelWidth);
+    max-width: var(--panelWidth);
+    height: 100vh;
+
+}
+
+
+.option-container{
+    cursor: pointer;
+}
+
+.option-list-container{
+    background-color: $TertiaryColor;
+    padding: 1em 0 1em 0;
+    overflow-y: scroll;
+    max-height: 80%;
+}
+
+.option-list-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.only-option{
+    margin-left: 1em;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+
+
+
+    img{
+        width: var(--iconsSize);
+        margin-right: 1em;
+    }
+
+    a{
+        color: $NeuralColor;
+        font-size: var(--linksSize);
+        text-decoration: none;
+    }
+}
+
+#main-logo{
+    pointer-events: none;
+    display: block;
+    width: 80%;
+    margin: 2em auto 2em auto;
+}
+
+
+.down-arrow{    
+    margin-right: 1em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.list-plegable-container{
+    background-color:$PrimaryColor;
+    width: 100%;
+}
+
+.list-plegable{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em 0 1em 1.5em;
+
+    img{
+        width: var(--iconsSize);
+        margin-right: 1em;
+    }
+
+    a{
+        color: $NeuralColor;
+        font-size: var(--linksSize);
+        text-decoration: none;
+    }
+}
+
+.list-selected{   
+    background-color: #fff !important;
+
+    a{
+        color: $PrimaryColor;
+    }
+}

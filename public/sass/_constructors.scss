@@ -1,0 +1,48 @@
+
+@mixin flexRowContainers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@mixin flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@mixin gridContainerResponsive{
+    @media (max-width: 1440px){
+        width: 90%;
+    }
+}
+
+@mixin downShadow{
+    -webkit-box-shadow: 0px 10px 24px -9px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 10px 24px -9px rgba(0,0,0,.7);
+    box-shadow: 0px 10px 24px -9px rgba(0,0,0,.7);
+}
+
+@mixin centerShadow{
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 0.2);
+}
+
+@mixin Simpleflex{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin spaceFlex{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

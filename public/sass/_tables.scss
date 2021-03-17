@@ -1,0 +1,618 @@
+
+.general-table{
+    width: 100%;
+}
+
+.head-table{
+    @include flexRowCenter;
+    align-items: flex-end !important;
+    background-color: $PrimaryColor;
+    padding: 2em;
+    border-radius: 25px 25px 0 0;
+
+    input[type="file"]{
+        display: none !important;
+    }
+
+    > label{
+        padding: 2em 5em 2em 5em;
+        border-radius: 10px;
+        background-color: #fff;
+        margin-right: 1em;
+
+        p{
+            color: $SecondaryColor;
+        }
+
+    }
+
+}
+
+.inputs-table-row{
+    @include flexRowCenter;
+
+    div{
+        margin: 0 .5em 0 .5em;
+        width: 100%;
+
+        p{
+            color: #fff;
+        }
+    }
+
+    input, select{
+        padding:.8em 0 .8em 0 ;
+        border: none;
+        border-radius: 5px;
+        margin-top: .5em;
+        outline: none;
+        display: block;
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+        resize: none;
+        outline: none;
+        border: none;
+        margin-top:.5em;
+    }
+
+}
+
+.small-input{
+    display: block;
+    width: 40% !important;
+}
+
+.body-table{
+    background-color: $tableBackground;
+    padding: 2em;
+}
+
+.submit-input{
+    padding: .5em 1em .5em 1em;
+    background-color: $SecondaryColor;
+    color: #fff;
+    font-size: var(--linksSize);
+    border: none;
+    border-radius: 10px;
+    float: right;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top:2em;
+}
+
+.title-table{
+    display: block;
+    background-color: $PrimaryColor;
+    text-align: center;
+    position: relative;
+    padding: .5em 0 .5em 0;
+
+    h2{
+        color: #fff !important;
+
+        &:nth-child(1){
+            margin: auto;
+        }
+
+        &:nth-child(2){
+            margin-right: 2.5em;
+        }
+    }
+
+}
+
+
+.row-info-table{
+
+
+    div{
+        
+        @include Simpleflex;
+        width: 100%;
+        position: relative;
+        margin: 1em 0 1em 0;
+
+        table{
+            border-collapse: separate;
+            width: 100%;
+
+            tr{
+                td{
+                    border: 2px solid $PrimaryColor;
+                    padding: .7em;
+                }
+            }
+        }
+
+        span{
+
+            
+            img{
+                width: var(--iconsSize);
+                margin: 0 1em 0 1em;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+.upload-panel{
+    input{
+        border: none;
+        @include centerShadow;
+        border-radius: 10px;
+        outline: none
+    }
+
+    input[type="submit"]{
+        background-color: $SecondaryColor;
+        padding: .5em 1.3em .5em 1.3em;
+        color: #fff;
+        margin-top: 2em;
+        font-size: var(--linksSize);
+        border-radius: 5px;
+        float: right;
+    }
+}
+
+.upload-panel-title{
+    @include flexRowCenter;
+    background-color: $PrimaryColor;
+
+    img{
+        background-color: $SecondaryColor;
+        margin: auto auto auto 0;
+        width: 4em;
+        padding: 1em;
+    }
+
+    h4{
+        margin: auto;
+        color: #fff;
+    }
+}
+
+.upload-panel-body{
+    border: 1px solid $PrimaryColor;
+    background-color: $tableBackground;
+    padding: 0 2em 0 2em;
+
+    input[type="text"]{
+        width: 100%;
+        text-align: center;
+        padding: .7em 0 .7em 0;
+
+        &::placeholder{
+            color: $PlaceHolderColor;
+            font-size: var(--linksSize);
+        }
+
+    }
+}
+
+.upload-box{
+    margin: 1em 0 1em 0;
+    @include flexRowCenter;
+
+    img{
+        width: 2em;
+    }
+
+    input[type="file"]{
+        display: none;
+    }
+
+    label{
+        @include flexRowCenter;
+        background-color: #fff;
+        width: 100%;
+        @include centerShadow;
+        border-radius: 10px;
+
+        img{
+            margin: auto 0 auto auto;
+            background-color: $grayBackground;
+            padding: .5em;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        p{
+
+            text-align: center;
+            color: $PlaceHolderColor;
+            margin: auto;
+            font-size: var(--linksSize);
+
+        }
+    }
+}
+
+.uploaded-box{
+    display: block;
+    margin: 2em 0 4em 0;
+}
+
+.subtitle-options{
+
+    width: 100%;
+    @include spaceFlex;
+
+    height: 3em;
+
+    h2{
+        margin: 0 !important;
+    }
+
+    div{
+        @include flexRowCenter;
+        background-color: $tableBackground;
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        img{
+            width: var(--iconsSize);
+            margin: 0 1.2em 0 1.2em;
+        }
+    }
+}
+
+.pagination-elements-container{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 4em 0 4em 0;
+}
+
+.block-element{
+    position: relative;
+    margin: 1em;
+}
+
+.img-block{
+
+    @include flexRowCenter;
+    justify-content: flex-start !important;
+    border: 1px solid $PrimaryColor;
+    padding: 1em;
+
+    span{
+        display: block;
+        border-radius: 100%;
+        width: 5em;
+        height: 5em;
+        overflow: hidden;
+        margin-right: 2em;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.block-options{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.4em 1em 1em 1em;
+
+    img{
+        width: var(--iconsSize);
+        margin: 0 1em 0 1em;
+    }
+}
+
+.text-img-block{
+    h3{
+        color: $PrimaryColor;
+
+    }
+
+    p{
+        color: $DarkFontsColor;      
+    }
+}
+
+
+.social-media-block{
+    border: 1px solid $PrimaryColor;
+    padding: .5em 0 .5em 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -35%;
+    }
+
+    img{
+        width: var(--big-icons-size);
+        margin: 0 1em 0 1em;
+    }
+}
+
+.styled-table{
+    margin-bottom: 3em;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    width: 100%;
+
+    td{
+        text-align: center;
+        padding: 1em;
+        white-space: nowrap;
+    }
+}
+
+.table-head{
+    background-color: $PrimaryColor;
+    padding: 1em 0 1em 0;
+    width: 100%;
+    margin-bottom: 2em;
+
+    td{
+        color: #fff;
+        font-size: var(--linksSize);
+    }
+}
+
+.table-body{
+
+
+
+    border-spacing: 1em;
+
+    td{
+        font-size: var(--paragraphSize);
+        border: 2px solid $PrimaryColor;
+        
+        &:first-child{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+    }
+}
+
+.white-space-table{
+    width: 100%;
+    height: 1.5em;
+}
+
+.small-white-space-table{
+    width: 100%;
+    height: 1em;
+}
+
+.factura-container{
+
+    width: 100%;
+    @include flexRowCenter;
+
+}
+
+$borderRadius-inputs:7px;
+
+.factura-column{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 0 1em;
+
+    input[type="submit"]{
+        margin-top: .5em;
+        border: none;
+        outline: none;
+        background-color: $PrimaryColor;
+        padding: .5em 0 .5em 0;
+        color: #fff;
+        border-radius: $borderRadius-inputs;
+        font-family: 'regular';
+        font-size: var(--buttons-size);
+    }
+
+    label{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 190px;
+        border: 1px solid $PrimaryColor;
+        border-radius: $borderRadius-inputs;
+
+        h3{
+            margin-bottom: 1em;
+        }
+
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: .5em 0 .5em 0;
+
+        h4{
+            margin-right: 1em;
+        }
+
+        input{
+            width: 100%;
+            padding: .5em;
+            border: 1px solid $PrimaryColor;
+            border-radius: $borderRadius-inputs;
+            text-align: center;
+        }
+
+        select{
+            width: 100%;
+            margin: 0 .2em 0 .2em;
+            border: 1px solid $PrimaryColor;
+            padding: .6em;
+            border-radius: $borderRadius-inputs;
+
+        }
+   }
+}
+
+#file{
+    display: none;
+}
+
+
+
+
+.body-table-facturacion{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.body-table-facturacion-head{
+    width: 100%;
+    @include flexRowCenter;
+    height: 4em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    div{
+        width: 100%;
+        @include flexRowCenter;
+        height: 100%;
+
+        &:first-of-type{
+            border-top-left-radius: 10px;
+        }
+
+        &:last-of-type{
+            border-top-right-radius: 10px;
+        }
+
+        a{
+            color: #fff;
+            text-decoration: underline;
+            margin: 0 1.5em 0 1.5em;
+        }
+
+        img{
+            width: var(--big-icons-size);
+        }
+    }
+}
+
+.body-table-facturacion-body{
+    width: 100%;
+    margin: auto;
+    border: 1px solid $PrimaryColor;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 3em;
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        position: relative;
+    }
+}
+
+.factura-table-head{
+    width: 100%;
+
+    td{
+        font-size: var(--paragraphSize);
+        text-align: center;
+    }
+}
+
+.factura-table-body{
+    width: 100%;
+    position: relative;
+
+    td{
+       border: 1px solid $PrimaryColor; 
+       padding: 1em;
+       position: relative;
+
+       select{
+           width: 100%;
+           border: none;
+           outline: none;
+           height: 100%;
+       }
+
+       input{
+           width: 100%;
+           border: none;
+           outline: none;
+           height: 100%;
+       }
+    }
+    
+}
+
+.arrow{
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: -15%;
+    top: 10%;
+    bottom: 0;
+}
+
+.add-product{
+
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img{
+        width: var(--big-icons-size);
+        margin-right: .5em;
+    }
+
+   a{
+      text-decoration: underline;
+      font-size: var(--linksSize);
+   } 
+}
+
+.flex-td{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    input{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: $PrimaryColor;
+        color: #fff;
+        font-size: var(--smallSubtitleSize);
+        padding: .3em 1em .3em 1em;
+        margin: 1em 0 1em 1em;
+    }
+}
